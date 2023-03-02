@@ -1,0 +1,23 @@
+.options{
+    margin-top: 2vh;
+    margin-left: 8vw ;
+    width: 25.35vw;
+    height: 6vh;
+    background: #202C33;
+    display: grid;
+    grid-template-areas: 
+    "foto ferramentas";
+}
+
+.foto {
+    padding-top: .6vh;
+    padding-left: 1vh;
+}
+
+.ferramentas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vh;
+    color: #AEBAC1;
+    font-size: 2vh;
+}

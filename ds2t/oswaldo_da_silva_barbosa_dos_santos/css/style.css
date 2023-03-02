@@ -1,0 +1,9 @@
+body{
+    background: #111B21;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "contatos informacao";
+}
