@@ -6,63 +6,85 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/barra-de-tarefa.css">
-    <link rel="stylesheet" href="./css/barra-de-contatos.css">
-    <link rel="stylesheet" href="./css/informacao.css">
+    <link rel="stylesheet" href="./css/body__left.css">
+    <link rel="stylesheet" href="./css/body__rigth.css">
+    <link rel="stylesheet" href="./css/header__left.css">
+    <link rel="stylesheet" href="./css/main__left.css">
+    <link rel="stylesheet" href="./css/main__rigth.css">
     <link rel="shortcut icon" href="./icon/whatsapp.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/53801ac64e.js" crossorigin="anonymous"></script>
+    <script src="./JS/index.js"></script>
     <title>WhatsApp</title>
 </head>
 
 <body>
-    <header>
-        <div class="options">
 
-            <div class="foto">
-                <img src="./img/foto.png" alt="">
+    <div class="container">
+
+        <div class="body__left">
+
+            <div class="header__left">
+
+                <div class="options">
+
+                    <div class="foto">
+                        <img src="./img/foto.png" alt="">
+                    </div>
+
+                    <div class="ferramentas">
+
+                        <i class="fas fa-users"></i>
+                        <i class="far fa-circle"></i>
+                        <i class="fas fa-comment-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="ferramentas">
+            <div class="main__left" id="main__left">
 
-                <i class="fas fa-users"></i>
-                <i class="far fa-circle"></i>
-                <i class="fas fa-comment-alt"></i>
-                <i class="fas fa-ellipsis-v"></i>
+                <div class="barra__procurar">
+
+                    <div class="icon__procurar">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <p class="conversas">Conversas</p>
+
+                </div>
+
+                <div class="card__contacts">
+
+                    <div class="card__image">
+                        <img src="img/foto.png" alt="">
+                    </div>
+
+                    <p class="card__name">Oswaldo</p>
+
+                    <p class="card__description">Olá Monteiro GOSTOSO</p>
+
+                </div>
+
             </div>
 
         </div>
 
-    </header>
+        <div class="body__rigth">
 
-    <main>
+            <div class="main__rigth">
 
-        <div class="procurar">
+                <div class="image__whatsapp">
+                    <img src="./img/whatsapp.PNG" alt="">
+                </div>
 
-            <div class="icon__search">
-                <i class="fas fa-search"></i>
-            </div>
-
-            <div class="icon__filter">
-                <i class="fas fa-filter"></i>
             </div>
 
         </div>
 
-        <div class="contatos">
-
-        </div>
-
-        <div class="info">
-
-        </div>
-
-    </main>
-
-
-
-
-
-
+    </div>
 
 </body>
 

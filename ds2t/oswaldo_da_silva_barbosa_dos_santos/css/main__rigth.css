@@ -1,0 +1,24 @@
+.main__rigth {
+    height: 96%;
+    width: 90%;
+    margin-top: 2vh;
+    background-color: #222E35;
+    border-left: 1px solid #313D45;
+    border-bottom: 5px solid #00A884;
+}
+
+.image__whatsapp {
+    display: flex;
+    padding: 30vh;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .main__rigth{
+        display: none;
+    }
+
+    .image__whatsapp{
+        display: none;
+    }
+}
