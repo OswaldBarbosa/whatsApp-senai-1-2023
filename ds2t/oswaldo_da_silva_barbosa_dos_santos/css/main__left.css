@@ -14,38 +14,41 @@
     color: #AEBAC1;
 }
 
-.card__contacts{
+.card__contacts {
     height: 7vh;
     width: 57.2vh;
     margin-top: 2vh;
     margin-left: 6vw;
+    border-bottom: 1px solid #313D45;
     background-color: #111B21;
-    border: 1px solid #313D45;
-
+    display: grid;
+    grid-template-areas:
+        "image text";
+    grid-template-columns:
+        1fr 6fr;
 }
 
-.card__image{
+.card__image {
     margin-top: 1.4vh;
     margin-left: 1vw;
     grid-area: image;
 }
 
-.card__name{
+.card__name {
+    padding-top: 1.5vh;
+    font-size: 1.8vh;
     color: #fff;
+    grid-area: text;
 }
 
-.card__description{
-    color: #fff;
+.card__description {
+    font-size: 1.2vh;
+    padding-top: 4vh;
+    color: #8696A0;
+    grid-area: text;
 }
 
-.card__name{
-    display: flex;
-    align-items: center;
-    padding-bottom: 2vh;
-    font-size: 2vh;
-}
-
-.conversas{
+.conversas {
     display: none;
 }
 

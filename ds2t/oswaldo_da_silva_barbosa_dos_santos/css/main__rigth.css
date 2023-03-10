@@ -9,16 +9,56 @@
 
 .image__whatsapp {
     display: flex;
-    padding: 30vh;
+    padding-top: 30vh;
     justify-content: center;
+    grid-area: image;
+}
+
+.whatsapp__web {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    font-size: 3vh;
+    color: #fff;
+    grid-area: description;
+}
+
+.description__um {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5vh;
+    font-size: 1.4vh;
+    color: #8696A0;
+}
+
+.description__dois {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5vh;
+    font-size: 1.4vh;
+    color: #8696A0;
+}
+
+.text__criptografia {
+    display: flex;
+    justify-content: center;
+    padding-top: 24vh;
+    font-size: 1.5vh;
+    color: #8696A0;
+}
+
+.icon__cadeado{
+    padding-top: 0.4vh;
+    padding-right: 0.5vh;
+    font-size: 0.8vh;
 }
 
 @media (max-width: 640px) {
-    .main__rigth{
+    .main__rigth {
         display: none;
     }
 
-    .image__whatsapp{
+    .image__whatsapp {
         display: none;
     }
 }
