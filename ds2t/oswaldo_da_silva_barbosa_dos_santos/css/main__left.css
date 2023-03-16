@@ -23,27 +23,32 @@
     background-color: #111B21;
     display: grid;
     grid-template-areas:
-        "image text";
+    "image text";
     grid-template-columns:
-        1fr 6fr;
+    1fr 6fr;
 }
 
 .card__image {
-    margin-top: 1.4vh;
+    margin-top: 1vh;
     margin-left: 1vw;
+    height: 5vh;
+    width: 4.5vh;
+    border-radius: 25px;
     grid-area: image;
 }
 
 .card__name {
     padding-top: 1.5vh;
+    padding-left: 1vw;
     font-size: 1.8vh;
     color: #fff;
     grid-area: text;
 }
 
 .card__description {
-    font-size: 1.2vh;
     padding-top: 4vh;
+    padding-left: 1vw;
+    font-size: 1.2vh;
     color: #8696A0;
     grid-area: text;
 }
