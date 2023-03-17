@@ -2,7 +2,7 @@
 
 import { contatos } from './contatos.js'
 
-const criarCard = (contatos) => {
+const criarCard = (contatos, indice) => {
     const card = document.createElement('div')
     card.classList.add('card__contacts')
 
@@ -20,7 +20,7 @@ const criarCard = (contatos) => {
 
     card.addEventListener('click', () => {
         let container = document.getElementById('main__rigth')
-        container.replaceChildren(criarHeaderMensagens)
+        container.replaceChildren(criarHeaderMensagens(indice), criarContainerMensagens(indice), criarFooterMensagens(indice))
     })
 
     card.append(foto, name, description)
@@ -28,26 +28,50 @@ const criarCard = (contatos) => {
     return card
 }
 
-const criarHeaderMensagens = () => {
+const criarHeaderMensagens = (indice) => {
     const header = document.createElement('div')
     header.classList.add('barra__mensagens')
 
     const foto = document.createElement('img')
     foto.classList.add('foto__mensagens')
-    foto.src = `./${contatos.image}`
+    foto.src = `./${contatos[indice].image}`
 
     const nomeContato = document.createElement('h5')
     nomeContato.classList.add('title__mensagens')
+    nomeContato.textContent = contatos[indice].name
+
+    const searchContainer = document.createElement('div')
+    searchContainer.classList.add('search__mensagens')
 
     const iconSearch = document.createElement('i')
-    iconSearch.classList.add('search__mensagens')
+    iconSearch.class = 'fas fa-search'
 
     const iconSettings = document.createElement('i')
     iconSearch.classList.add('settings__mensagens')
 
-    header.append(foto, nomeContato, iconSearch, iconSettings)
+    header.append(foto, nomeContato, searchContainer)
+    searchContainer.append(iconSearch)
 
     return header
+}
+
+const criarContainerMensagens = (indice) => {
+    const containerMensagens = document.createElement('div')
+    containerMensagens.classList.add('container__mensagens')
+
+    const inputMensagem = document.createElement('input')
+    inputMensagem.classList.add('input__mensagem')
+
+    containerMensagens.append(inputMensagem)
+
+    return containerMensagens
+}
+
+const criarFooterMensagens = (indice) => {
+    const containerMensagensFooter = document.createElement('div')
+    containerMensagensFooter.classList.add('footer__mensagens')
+
+    return containerMensagensFooter
 }
 
 const carregarContatos = () => {
