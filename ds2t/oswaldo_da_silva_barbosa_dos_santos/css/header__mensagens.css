@@ -1,9 +1,10 @@
 .barra__mensagens{
     width: 100%;
     height: 6vh;
+    background-color: #202C33;
     display: grid;
     grid-template-areas: 
-    "image text icons";
+    "image title icons";
     grid-template-columns: 
     1fr 10fr 1fr;
 }
@@ -15,35 +16,26 @@
 }
 
 .title__mensagens{
-    padding-top: 1.4vh;
+    display: flex;
+    align-items: center;
     color: #ffffff;
     font-weight: 600;
-    grid-area: text;
-}
-
-.description__mensagens{
-    padding-top: 3.5vh;
-    color: #8696A0;
-    font-size: 1.4vh;
-    grid-area: text;
+    grid-area: title;
 }
 
 .search__mensagens{
-    display: flex;
-    align-items: center;
-    padding-top: 1.5vh;
+    padding-top: 2vh;
     font-size: 1.8vh;
-    color: #8696A0;
+    color: #AEBAC1;
     grid-area: icons;
 }
 
 .settings__mensagens{
     display: flex;
-    align-items: center;
     justify-content: end;
-    padding-top: 1.5vh;
+    padding-top: 2vh;
     padding-right: 1.5vw;
     font-size: 2.2vh;
-    color: #8696A0;
+    color: #AEBAC1;
     grid-area: icons;
 }

@@ -20,12 +20,34 @@ const criarCard = (contatos) => {
 
     card.addEventListener('click', () => {
         let container = document.getElementById('main__rigth')
-        container.replaceChildren()
+        container.replaceChildren(criarHeaderMensagens)
     })
 
     card.append(foto, name, description)
 
     return card
+}
+
+const criarHeaderMensagens = () => {
+    const header = document.createElement('div')
+    header.classList.add('barra__mensagens')
+
+    const foto = document.createElement('img')
+    foto.classList.add('foto__mensagens')
+    foto.src = `./${contatos.image}`
+
+    const nomeContato = document.createElement('h5')
+    nomeContato.classList.add('title__mensagens')
+
+    const iconSearch = document.createElement('i')
+    iconSearch.classList.add('search__mensagens')
+
+    const iconSettings = document.createElement('i')
+    iconSearch.classList.add('settings__mensagens')
+
+    header.append(foto, nomeContato, iconSearch, iconSettings)
+
+    return header
 }
 
 const carregarContatos = () => {

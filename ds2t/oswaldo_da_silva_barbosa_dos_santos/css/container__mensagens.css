@@ -1,0 +1,7 @@
+.container__mensagens{
+    width: 100%;
+    height: 83vh;
+    background-image: url(../img/plano__de__fundo.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
