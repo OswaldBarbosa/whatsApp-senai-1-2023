@@ -20,7 +20,7 @@ const criarCard = (contatos, indice) => {
 
     card.addEventListener('click', () => {
         let container = document.getElementById('main__rigth')
-        container.replaceChildren(criarHeaderMensagens(indice), criarContainerMensagens(indice), criarFooterMensagens(indice))
+        container.replaceChildren(criarHeaderMensagens(indice), criarContainerMensagens(indice), criarFooterMensagens())
     })
 
     card.append(foto, name, description)
@@ -59,17 +59,25 @@ const criarContainerMensagens = (indice) => {
     const containerMensagens = document.createElement('div')
     containerMensagens.classList.add('container__mensagens')
 
-    const inputMensagem = document.createElement('input')
-    inputMensagem.classList.add('input__mensagem')
-
-    containerMensagens.append(inputMensagem)
-
     return containerMensagens
 }
 
 const criarFooterMensagens = (indice) => {
     const containerMensagensFooter = document.createElement('div')
     containerMensagensFooter.classList.add('footer__mensagens')
+
+    const containerIconsFooter = document.createElement('div')
+    containerIconsFooter.classList.add('emoji__anexar')
+
+    const icon = document.createElement('i')
+    icon.classList.add('emoji__anexar')
+
+    const inputMensagem = document.createElement('input')
+    inputMensagem.classList.add('input__mensagem')
+
+    containerMensagensFooter.append(inputMensagem, containerIconsFooter)
+
+    containerIconsFooter.append(icon)
 
     return containerMensagensFooter
 }

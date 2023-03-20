@@ -28,6 +28,11 @@
     1fr 6fr;
 }
 
+.card__contacts:houver{
+    background-color: #000000;
+    transition: 1s;
+}
+
 .card__image {
     margin-top: 1vh;
     margin-left: 1vw;
