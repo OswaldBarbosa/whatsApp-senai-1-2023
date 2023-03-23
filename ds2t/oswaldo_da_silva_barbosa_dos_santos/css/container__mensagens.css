@@ -1,7 +1,77 @@
-.container__mensagens{
+.container__mensagens {
     width: 100%;
     height: 83vh;
     background-image: url(../img/plano__de__fundo.PNG);
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas:
+    "caixa-sua caixa-minha";
+    grid-template-columns:
+    1fr 1fr;
+}
+
+.caixa-mensagem-minha {
+    justify-self: end;
+    align-self: flex-end;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+    width: 20vw;
+    height: 5vh;
+    background: #005C4B;
+    grid-area: caixa-minha;
+    display: grid;
+    grid-template-areas:
+    "mensagem hora";
+    grid-template-columns:
+    8fr 1fr;
+}
+
+.mensagem-minha {
+    display: grid;
+    align-items: center;
+    padding-left: 1vw;
+    font-size: 1.8vh;
+    color: #fff;
+}
+
+.hora-minha {
+    display: grid;
+    align-items: flex-end;
+    padding: 1vh;
+    font-size: 1.2vh;
+    color: #AEBAC1;
+    grid-area: hora;
+}
+
+.caixa-mensagem-sua {
+    align-self: flex-end;
+    margin-bottom: 8vh;
+    margin-left: 3vw;
+    width: 20vw;
+    height: 5vh;
+    background: #202C33;
+    grid-area: caixa-sua;
+    display: grid;
+    grid-template-areas:
+    "mensagem hora";
+    grid-template-columns:
+    8fr 1fr;
+}
+
+.mensagem-sua {
+    display: grid;
+    align-items: center;
+    padding-left: 1vw;
+    font-size: 1.8vh;
+    color: #fff;
+}
+
+.hora-sua {
+    display: grid;
+    align-items: flex-end;
+    padding: 1vh;
+    font-size: 1.2vh;
+    color: #AEBAC1;
+    grid-area: hora;
 }

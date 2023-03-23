@@ -1,15 +1,19 @@
-.footer__mensagens{
+.footer__mensagens {
     width: 100%;
     height: 6.5vh;
     background-color: #202C33;
     display: grid;
-    grid-template-areas: 
-    "emoji input microfone";
-    grid-template-columns: 
-    2fr 12fr 1fr;
+    grid-template-areas:
+        "emoji input microfone";
+    grid-template-columns:
+        2fr 12fr 1fr;
 }
 
-.emoji__anexar{
+.emoji__anexar {
+    display: none
+}
+
+.emoji__anexar__on {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -17,16 +21,20 @@
     color: #AEBAC1;
 }
 
-.input__mensagem{
+.input__mensagem {
     margin-top: 0.5vh;
     height: 5vh;
     border-radius: 10px;
-    color: #fff;
+    color: #AEBAC1;
     background-color: #2A3942;
     grid-area: input;
 }
 
-.microfone{
+.microfone-none {
+    display: none
+}
+
+.microfone {
     display: flex;
     justify-content: center;
     align-items: center;

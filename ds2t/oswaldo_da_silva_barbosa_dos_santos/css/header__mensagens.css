@@ -25,20 +25,3 @@
     font-weight: 600;
     grid-area: title;
 }
-
-.search__mensagens{
-    padding-top: 2vh;
-    font-size: 1.8vh;
-    color: #AEBAC1;
-    grid-area: icons;
-}
-
-.settings__mensagens{
-    display: flex;
-    justify-content: end;
-    padding-top: 2vh;
-    padding-right: 1.5vw;
-    font-size: 2.2vh;
-    color: #AEBAC1;
-    grid-area: icons;
-}
