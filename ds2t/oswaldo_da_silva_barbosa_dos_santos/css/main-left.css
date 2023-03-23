@@ -1,6 +1,6 @@
-.card__contacts {
-    height: 7vh;
+.card-contacts {
     width: 30vw;
+    height: 7vh;
     margin-top: 2vh;
     margin-left: 6vw;
     background-color: #111B21;
@@ -14,26 +14,25 @@
     transition: 0.5s;
 }
 
-.card__contacts:hover{
+.card-contacts:hover{
     background: #202C33;
     border-bottom: none;
 }
 
-.card__contacts:houver{
+.card-contacts:houver{
     background-color: #000000;
     transition: 1s;
 }
 
-.card__image {
+.card-image {
     margin-top: 1vh;
     margin-left: 1vw;
     height: 5vh;
-    width: 4.5vh;
     border-radius: 25px;
     grid-area: image;
 }
 
-.card__name {
+.card-name {
     padding-top: 1.5vh;
     padding-left: 1vw;
     font-size: 1.8vh;
@@ -41,7 +40,7 @@
     grid-area: text;
 }
 
-.card__description {
+.card-description {
     padding-top: 4vh;
     padding-left: 1vw;
     font-size: 1.2vh;
@@ -54,8 +53,28 @@
 }
 
 @media (max-width: 640px) {
-    .card__contacts{
-        width: 40vw;
+    .card-contacts{
+        width: 94vw;
+        height: 8vh;
     }
 
+    .card-contacts:houver {
+        background: #202C33;
+        border-bottom: none;
+    }
+
+    .card-image {
+        height: 6vh;
+    }
+
+    .card-name {
+        font-size: 2.5vh;
+    }
+
+    .card-description {
+        font-size: 1.5vh;
+    }
+    .main-left{
+        height: 100vh;
+    }
 }
